@@ -1,7 +1,7 @@
 import marimo
 
 __generated_with = "0.11.12"
-app = marimo.App(width="full")
+app = marimo.App(width="full", theme="dark")
 
 
 @app.cell
@@ -363,7 +363,8 @@ def _(
         "#/car/toyota/scion": render_scion_page,
         "#/car/toyota/gr86": render_gr86_page,
         "#/car/mazda/cx9": render_cx9_page,
-        "#/car/mazda/cx3": render_cx3_page
+        "#/car/mazda/cx3": render_cx3_page,
+        mo.routes.DEFAULT: render_home_page
     })
     return
 
